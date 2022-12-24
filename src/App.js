@@ -1,9 +1,18 @@
+import About from "./About";
 import "./App.css";
+import Exp from "./Exp";
+import Header from "./Header";
+import Hero from "./Hero";
+import Port from "./Port";
 
 function App() {
 	return (
-		<main className=" bg-slate-400 w-full min-h-screen px-[100px]">
-			<p className="text-3xl font-bold underline font-inter">Hello world!</p>
+		<main className="bg-red-white h-screen px-[100px]">
+			<Header />
+			<Hero />
+			<About />
+			<Exp />
+			<Port />
 		</main>
 	);
 }
