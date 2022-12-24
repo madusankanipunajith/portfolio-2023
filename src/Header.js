@@ -6,7 +6,7 @@ const Header = () => {
 	return (
 		<section className="grid grid-cols-12 gap-4">
 			<div className="col-start-2 col-span-10">
-				<div className=" flex flex-row pb-5 pt-2 justify-between items-center cursor-pointer">
+				<div className=" flex flex-row py-3 justify-between items-center cursor-pointer">
 					{/* LOGO */}
 					<div className="flex items-center">
 						<div className="flex flex-col rounded-full w-16 h-16 text-center justify-center bg-primary">

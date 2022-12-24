@@ -7,12 +7,16 @@ import Port from "./Port";
 
 function App() {
 	return (
-		<main className="bg-red-white h-screen px-[100px] text-dark">
-			<Header />
-			<Hero />
-			<About />
-			<Exp />
-			<Port />
+		<main className="bg-red-white h-screen  text-dark">
+			<div className=" shadow-lg">
+				<Header />
+			</div>
+			<div className="px-[100px]">
+				<Hero />
+				<About />
+				<Exp />
+				<Port />
+			</div>
 		</main>
 	);
 }
