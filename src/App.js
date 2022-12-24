@@ -7,7 +7,7 @@ import Port from "./Port";
 
 function App() {
 	return (
-		<main className="bg-red-white h-screen px-[100px]">
+		<main className="bg-red-white h-screen px-[100px] text-dark">
 			<Header />
 			<Hero />
 			<About />
