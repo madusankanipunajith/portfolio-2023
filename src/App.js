@@ -13,7 +13,11 @@ function App() {
 			</div>
 			<div className="px-[100px]">
 				<Hero />
+			</div>
+			<div className=" px-[100px] bg-gradient-to-b from-[#BBDBFF] to-white">
 				<About />
+			</div>
+			<div className="px-[100px]">
 				<Exp />
 				<Port />
 			</div>

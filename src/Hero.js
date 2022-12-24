@@ -19,7 +19,7 @@ const Hero = () => {
 		<section className="grid grid-cols-12 gap-4 h-full mt-1 w-2/3">
 			<div className="col-start-2 col-span-10 py-20 h-[600px]">
 				<div>
-					<h1 className=" font-bold text-5xl">
+					<h1 className=" font-bold text-5xl mt-10">
 						I'm <span className=" text-primary">Dimuthu</span> Dhanushka
 					</h1>
 					<h2 className=" text-3xl font-bold mt-4">
