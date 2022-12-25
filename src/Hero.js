@@ -6,7 +6,7 @@ import { loadFull } from "tsparticles";
 const Hero = () => {
 
 	return (
-		<section className="grid grid-cols-12 gap-4 h-full mt-1 w-full">
+		<section className="grid grid-cols-12 gap-4 h-full mt-36 w-full " id="home">
 			<div className="col-start-2 col-span-10 py-20 h-[600px]">
 				<div className="w-2/3">
 					<h1 className=" font-bold text-5xl mt-10">
