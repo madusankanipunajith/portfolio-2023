@@ -1,5 +1,5 @@
 import React from "react";
-import avatar from "./avatar 1.png";
+import avatar from "./images/avatar 1.png";
 import { BsLinkedin } from "react-icons/bs";
 
 const About = () => {
@@ -11,11 +11,11 @@ const About = () => {
 					<div className="flex items-center w-1/2">
 						<div>
 							{/* img */}
-							<img src={avatar} className=" h-36" alt="avatar" />
+							<img src={avatar} className=" h-48" alt="avatar" />
 						</div>
 						<div className="ml-5">
 							<h3 className="">Software Engineer</h3>
-							<p className=" font-bold text-2xl">Dimuthu Dhanushka</p>
+							<p className=" font-bold text-xl">Dimuthu Dhanushka</p>
 							<div className="flex mt-8">
 								<BsLinkedin className=" text-3xl mr-4" />
 								<BsLinkedin className=" text-3xl mr-4" />

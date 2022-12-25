@@ -20,11 +20,11 @@ const Header = () => {
 	return (
 		<section className="grid grid-cols-12 gap-4">
 			<div className="col-start-2 col-span-10">
-				<div className=" flex flex-row py-3 justify-between items-center ">
+				<div className=" flex flex-row py-3 justify-between items-center">
 					{/* LOGO */}
 					<div className="flex items-center">
 						<div className="flex flex-col rounded-full w-16 h-16 text-center justify-center bg-primary">
-							<p className=" text-white font-bold text-2xl">DD</p>
+							<p className=" text-white font-bold text-2xl ">DD</p>
 						</div>
 						<div className="ml-3">
 							<p className="font-bold">D. Dhanushka</p>
@@ -41,14 +41,14 @@ const Header = () => {
 								to="home"
 								spy={true}
 								smooth={true}
-								offset={-130}
+								offset={-160}
 								duration={500}
 							>
 								Home
 							</Link>
 							<Link
 								className={navListItemStyle}
-								activeStyle={active}
+								activeStyle={active}d
 								to="about"
 								spy={true}
 								smooth={true}

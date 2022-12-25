@@ -2,26 +2,26 @@ import React from "react";
 import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
+import bgImg from "./images/undraw_hello_re_3evm.svg";
 
 const Hero = () => {
-
 	return (
-		<section className="grid grid-cols-12 gap-4 h-full mt-36 w-full " id="home">
-			<div className="col-start-2 col-span-10 py-20 h-[600px]">
-				<div className="w-2/3">
+		<section className="grid grid-cols-12 gap-4 h-full pt-40 pb-32 w-full " id="home">
+			<div className="col-start-2 col-span-10   relative">
+				<div className="w-2/3 z-2000">
 					<h1 className=" font-bold text-5xl mt-10">
 						I'm <span className=" text-primary">Dimuthu</span> Dhanushka
 					</h1>
 					<h2 className=" text-3xl font-bold mt-4">
 						Software Engineer | Designer
 					</h2>
-					<p className=" text-xl mt-7 font-sp">
+					<p className=" text-xl mt-7 font-sp z-10 relative">
 						I design and develop services for customers of all sizes,
 						specializing in creating stylish, modern websites, web services and
 						online stores.
 					</p>
 
-					<div className="mt-12">
+					<div className="mt-12 z-10 relative">
 						<button className="tracking-wider px-5 py-3 rounded-md bg-primary text-white font-bold border-2 border-primary hover:bg-white hover:border-primary hover:text-primary">
 							DOWNLOAD CV
 						</button>
