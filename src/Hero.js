@@ -4,21 +4,11 @@ import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 
 const Hero = () => {
-	// const particlesInit = useCallback(async (engine) => {
-	// 	console.log(engine);
-	// 	// you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-	// 	// this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-	// 	// starting from v2 you can add only the features you need reducing the bundle size
-	// 	await loadFull(engine);
-	// }, []);
 
-	// const particlesLoaded = useCallback(async (container) => {
-	// 	await console.log(container);
-	// }, []);
 	return (
-		<section className="grid grid-cols-12 gap-4 h-full mt-1 w-2/3">
+		<section className="grid grid-cols-12 gap-4 h-full mt-1 w-full">
 			<div className="col-start-2 col-span-10 py-20 h-[600px]">
-				<div>
+				<div className="w-2/3">
 					<h1 className=" font-bold text-5xl mt-10">
 						I'm <span className=" text-primary">Dimuthu</span> Dhanushka
 					</h1>

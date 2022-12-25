@@ -7,8 +7,8 @@ import Port from "./Port";
 
 function App() {
 	return (
-		<main className="bg-red-white h-screen  text-dark">
-			<div className=" shadow-lg">
+		<main className="h-screen text-dark">
+			<div className="px-[100px] shadow-lg">
 				<Header />
 			</div>
 			<div className="px-[100px]">
