@@ -1,13 +1,48 @@
 import React from "react";
+import ProjectCard from "./components/ProjectCard";
+import Fade from "react-reveal/Fade";
 
 const Port = () => {
 	return (
 		<div id="portfolio">
 			<h1 className=" text-3xl font-bold text-center pb-10 mt-6">Portfolio</h1>
 			<section className="grid grid-cols-12 gap-4 min-h-[600px] pb-28">
-				<div className="col-span-4 bg-blue-400">c1</div>
-				<div className="col-span-4 bg-blue-400">c1</div>
-				<div className="col-span-4 bg-blue-400">c1</div>
+				<ProjectCard
+					link="#"
+					title="OntoBot"
+					description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+				ultricies mattis est ultricies feugiat. Proin vel sagittis nunc, quis
+				maximus nibh. Nullam ornare nisi eu urna eleifend, sit amet sagittis
+				lorem molestie. Ut eu sollicitudin augue. Donec in accumsan mauris.
+				Aeneanr.Lorem ipsum dolor sit amet,"
+				/>
+				<ProjectCard
+					link="#"
+					title="OntoBot"
+					description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+				ultricies mattis est ultricies feugiat. Proin vel sagittis nunc, quis
+				maximus nibh. Nullam ornare nisi eu urna eleifend, sit amet sagittis
+				lorem molestie. Ut eu sollicitudin augue. Donec in accumsan mauris.
+				Aeneanr.Lorem ipsum dolor sit amet,"
+				/>
+				<ProjectCard
+					link="#"
+					title="OntoBot"
+					description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+				ultricies mattis est ultricies feugiat. Proin vel sagittis nunc, quis
+				maximus nibh. Nullam ornare nisi eu urna eleifend, sit amet sagittis
+				lorem molestie. Ut eu sollicitudin augue. Donec in accumsan mauris.
+				Aeneanr.Lorem ipsum dolor sit amet,"
+				/>
+				<ProjectCard
+					link="#"
+					title="OntoBot"
+					description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+				ultricies mattis est ultricies feugiat. Proin vel sagittis nunc, quis
+				maximus nibh. Nullam ornare nisi eu urna eleifend, sit amet sagittis
+				lorem molestie. Ut eu sollicitudin augue. Donec in accumsan mauris.
+				Aeneanr.Lorem ipsum dolor sit amet,"
+				/>
 			</section>
 		</div>
 	);

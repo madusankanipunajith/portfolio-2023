@@ -1,6 +1,6 @@
 import React from "react";
 import avatar from "./images/avatar 1.png";
-import { BsLinkedin } from "react-icons/bs";
+import { BsLinkedin, BsGithub } from "react-icons/bs";
 
 const About = () => {
 	return (
@@ -17,9 +17,9 @@ const About = () => {
 							<h3 className="">Software Engineer</h3>
 							<p className=" font-bold text-xl">Dimuthu Dhanushka</p>
 							<div className="flex mt-8">
-								<BsLinkedin className=" text-3xl mr-4" />
-								<BsLinkedin className=" text-3xl mr-4" />
-								<BsLinkedin className=" text-3xl mr-4" />
+								<a href="#"><BsLinkedin className=" text-3xl mr-4 transition hover:text-primary" /></a>
+								<a href="#"><BsGithub className=" text-3xl mr-4 transition hover:text-primary" /></a>
+								<a href="#"><BsLinkedin className=" text-3xl mr-4 transition hover:text-primary" /></a>
 							</div>
 						</div>
 					</div>

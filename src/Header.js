@@ -12,7 +12,7 @@ import {
 
 const Header = () => {
 	const navListItemStyle =
-		"inline px-3 text-sm hover:text-primary pb-3  border-primary cursor-pointer";
+		"inline px-3 text-sm hover:text-primary pb-3  border-primary cursor-pointer transition duration-300";
 	const active = {
 		color: "#2958FF",
 		borderBottomWidth: "2px",

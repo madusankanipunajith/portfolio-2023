@@ -22,7 +22,7 @@ const Hero = () => {
 					</p>
 
 					<div className="mt-12 z-10 relative">
-						<button className="tracking-wider px-5 py-3 rounded-md bg-primary text-white font-bold border-2 border-primary hover:bg-white hover:border-primary hover:text-primary">
+						<button className="transition duration-500	 tracking-wider px-5 py-3 rounded-md bg-primary text-white font-bold border-2 border-primary hover:bg-white hover:border-primary hover:text-primary">
 							DOWNLOAD CV
 						</button>
 					</div>
