@@ -1,14 +1,15 @@
 import React, { useState } from "react";
-import { GiHamburgerMenu } from "react-icons/gi";
+import { GiHamburgerMenu, GiProgression } from "react-icons/gi";
 import { IoCloseOutline } from "react-icons/io5";
-import * as Scroll from "react-scroll";
 import {
-	Link,
-	Button,
-	Element,
-	Events,
-	animateScroll as scroll,
-} from "react-scroll";
+	AiOutlineHome,
+	AiOutlineInfoCircle,
+	AiOutlineExperiment,
+} from "react-icons/ai";
+import { GrProjects } from "react-icons/gr";
+import { MdOutlineSchool } from "react-icons/md";
+import * as Scroll from "react-scroll";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const Header = () => {
 	const navListItemStyle =
@@ -19,7 +20,7 @@ const Header = () => {
 	};
 	const activeMobileMenuItem =
 		"transition duration-500 p-5 block hover:bg-primary/30  text-xl text-center";
-
+	const mobileMenuIconStyle = "text-2xl mr-4";
 	const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
 
 	return (
@@ -84,13 +85,37 @@ const Header = () => {
 				<nav className="block lg:hidden ">
 					<ul className="list-none h-screen">
 						{[
-							["Home", "home"],
-							["About", "about"],
-							["Education", "education"],
-							["Experience", "experience"],
-							["Portfolio", "portfolio"],
-							["Skills", "skills"],
-						].map(([title, url]) => (
+							[
+								"Home",
+								"home",
+								<AiOutlineHome className={mobileMenuIconStyle} />,
+							],
+							[
+								"About",
+								"about",
+								<AiOutlineInfoCircle className={mobileMenuIconStyle} />,
+							],
+							[
+								"Education",
+								"education",
+								<MdOutlineSchool className={mobileMenuIconStyle} />,
+							],
+							[
+								"Experience",
+								"experience",
+								<AiOutlineExperiment className={mobileMenuIconStyle} />,
+							],
+							[
+								"Portfolio",
+								"portfolio",
+								<GrProjects className={mobileMenuIconStyle} />,
+							],
+							[
+								"Skills",
+								"skills",
+								<GiProgression className={mobileMenuIconStyle} />,
+							],
+						].map(([title, url, icon]) => (
 							<Link
 								className={activeMobileMenuItem}
 								onClick={() =>
@@ -104,7 +129,11 @@ const Header = () => {
 								offset={-160}
 								duration={500}
 							>
-								{title}
+								<div className="flex justify-center items-center">
+									{icon}
+									{title}
+									{/* <AiOutlineHome className="text-2xl mr-4" /> */}
+								</div>
 							</Link>
 						))}
 					</ul>
