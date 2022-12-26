@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { IoCloseOutline } from "react-icons/io5";
 import * as Scroll from "react-scroll";
 import {
 	Link,
@@ -16,6 +17,11 @@ const Header = () => {
 		color: "#2958FF",
 		borderBottomWidth: "2px",
 	};
+	const activeMobileMenuItem =
+		"transition duration-500 p-5 block hover:bg-primary/30  text-xl text-center";
+
+	const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
+
 	return (
 		<>
 			<section className="md:grid grid-cols-12 gap-4">
@@ -33,103 +39,77 @@ const Header = () => {
 						</div>
 
 						{/* Mobile */}
-						<button className="block lg:hidden">
-							<GiHamburgerMenu className=" text-primary text-3xl hover:text-dark" />
+						<button
+							className="block lg:hidden"
+							onClick={() => setMobileMenuVisible(!mobileMenuVisible)}
+						>
+							{mobileMenuVisible ? (
+								<IoCloseOutline className=" text-primary text-3xl hover:text-dark" />
+							) : (
+								<GiHamburgerMenu className=" text-primary text-3xl hover:text-dark " />
+							)}
 						</button>
 
 						{/* NAVBAR */}
 						<nav className="hidden lg:block ">
 							<ul className="list-none">
-								<Link
-									className={navListItemStyle}
-									activeStyle={active}
-									to="home"
-									spy={true}
-									smooth={true}
-									offset={-160}
-									duration={500}
-								>
-									Home
-								</Link>
-								<Link
-									className={navListItemStyle}
-									activeStyle={active}
-									d
-									to="about"
-									spy={true}
-									smooth={true}
-									offset={-80}
-									duration={500}
-								>
-									About
-								</Link>
-								<Link
-									className={navListItemStyle}
-									activeStyle={active}
-									to="education"
-									spy={true}
-									smooth={true}
-									offset={-110}
-									duration={500}
-								>
-									Education
-								</Link>
-								<Link
-									className={navListItemStyle}
-									activeStyle={active}
-									to="experience"
-									spy={true}
-									smooth={true}
-									offset={-100}
-									duration={500}
-								>
-									Experience
-								</Link>
-								<Link
-									className={navListItemStyle}
-									activeStyle={active}
-									to="portfolio"
-									spy={true}
-									smooth={true}
-									offset={-120}
-									duration={500}
-								>
-									Portfolio
-								</Link>
-								<Link
-									className={navListItemStyle}
-									activeStyle={active}
-									to="skills"
-									spy={true}
-									smooth={true}
-									offset={-100}
-									duration={500}
-								>
-									Skills
-								</Link>
+								{[
+									["Home", "home"],
+									["About", "about"],
+									["Education", "education"],
+									["Experience", "experience"],
+									["Portfolio", "portfolio"],
+									["Skills", "skills"],
+								].map(([title, url]) => (
+									<Link
+										className={navListItemStyle}
+										activeStyle={active}
+										to={url}
+										spy={true}
+										smooth={true}
+										offset={-160}
+										duration={500}
+									>
+										{title}
+									</Link>
+								))}
 							</ul>
 						</nav>
 
-						{/* TALK NOW */}
 						{/* <p>Talk now</p> */}
 					</div>
 				</div>
 			</section>
-			{/* <nav className="block lg:hidden ">
-				<ul className="list-none">
-					<Link
-						className="p-5 block"
-						// activeStyle={active}
-						to="home"
-						spy={true}
-						smooth={true}
-						offset={-160}
-						duration={500}
-					>
-						Home
-					</Link>
-				</ul>
-			</nav> */}
+			{mobileMenuVisible && (
+				<nav className="block lg:hidden ">
+					<ul className="list-none h-screen">
+						{[
+							["Home", "home"],
+							["About", "about"],
+							["Education", "education"],
+							["Experience", "experience"],
+							["Portfolio", "portfolio"],
+							["Skills", "skills"],
+						].map(([title, url]) => (
+							<Link
+								className={activeMobileMenuItem}
+								onClick={() =>
+									setTimeout(() => {
+										setMobileMenuVisible(false);
+									}, 1000)
+								}
+								to={url}
+								spy={true}
+								smooth={true}
+								offset={-160}
+								duration={500}
+							>
+								{title}
+							</Link>
+						))}
+					</ul>
+				</nav>
+			)}
 		</>
 	);
 };

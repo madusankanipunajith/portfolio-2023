@@ -11,15 +11,15 @@ const About = () => {
 			<div className="col-start-2 col-span-10">
 				<h1 className=" text-3xl font-bold text-center p-14">About me</h1>
 				<div className="flex lg:flex-row flex-col pt-0 pb-20 px-10 lg:px-0 items-center">
-					<div className="flex items-center lg:w-1/2">
+					<div className="flex flex-col lg:flex-row items-center lg:w-1/2">
 						<div>
 							{/* img */}
-							<img src={avatar} className=" h-48" alt="avatar" />
+							<img src={avatar} className=" lg:h-48 h-32 " alt="avatar" />
 						</div>
-						<div className="ml-5">
-							<h3 className="">Software Engineer</h3>
+						<div className="lg:ml-5 ml-0 text-center lg:text-start">
+							<h3 className="text-center lg:text-start mt-5 lg:mt-0">Software Engineer</h3>
 							<p className=" font-bold text-xl">Dimuthu Dhanushka</p>
-							<div className="flex mt-8">
+							<div className="flex mt-8 justify-between">
 								<a href="#">
 									<BsLinkedin className=" text-3xl mr-4 transition hover:text-primary" />
 								</a>
