@@ -6,13 +6,13 @@ import bgImg from "./images/undraw_hello_re_3evm.svg";
 
 const Hero = () => {
 	return (
-		<section className="grid grid-cols-12 gap-4 h-full pt-40 pb-32 w-full " id="home">
-			<div className="col-start-2 col-span-10   relative">
-				<div className="w-2/3 z-2000">
-					<h1 className=" font-bold text-5xl mt-10">
+		<section className="lg:grid grid-cols-12 gap-4 h-full pt-32 lg:pt-40 pb-12 lg:pb-32 w-full" id="home">
+			<div className="col-start-2 col-span-10 relative p-10 lg:p-0">
+				<div className="lg:w-2/3 z-2000">
+					<h1 className=" font-bold text-5xl lg:mt-10 z-10 relative">
 						I'm <span className=" text-primary">Dimuthu</span> Dhanushka
 					</h1>
-					<h2 className=" text-3xl font-bold mt-4">
+					<h2 className=" text-3xl font-bold mt-4 z-10 relative">
 						Software Engineer | Designer
 					</h2>
 					<p className=" text-xl mt-7 font-sp z-10 relative">
