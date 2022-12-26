@@ -5,7 +5,7 @@ import TimelineCard from "./components/TimelineCard";
 const Edu = () => {
 	return (
 		<section
-			className="grid grid-cols-12 gap-4 mt-24 mb-10 min-h-[600px] "
+			className="grid grid-cols-12 gap-4 lg:mt-24 mb-10 min-h-[600px] "
 			id="education"
 		>
 			<div className="col-start-2 col-span-10 ">

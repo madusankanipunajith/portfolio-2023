@@ -3,7 +3,7 @@ import defaultImg from "./../images/undraw_progressive_app_m-9-ms.svg";
 
 const ProjectCard = ({ title, description, img, link }) => {
 	return (
-		<div className="col-span-4 shadow-md p-8 rounded-md flex flex-col">
+		<div className="col-span-4 shadow-md p-8 rounded-md flex flex-col mb-5 lg:mt-5">
 			<img src={img ? img : defaultImg} alt="img" />
 			<h2 className="mt-10 mb-5 font-bold text-xl">{title}</h2>
 			<p className="">{description}</p>
