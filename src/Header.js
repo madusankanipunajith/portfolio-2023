@@ -19,7 +19,7 @@ const Header = () => {
 		borderBottomWidth: "2px",
 	};
 	const activeMobileMenuItem =
-		"transition duration-500 p-5 block hover:bg-primary/30  text-xl text-center";
+		"transition duration-500 p-5 block hover:bg-primary/30  text-xl text-center cursor-pointer";
 	const mobileMenuIconStyle = "text-2xl mr-4";
 	const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
 
