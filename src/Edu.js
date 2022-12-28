@@ -12,7 +12,7 @@ const Edu = () => {
 				<h1 className=" text-3xl font-bold text-center pb-10 mt-6">
 					Education
 				</h1>
-				<Slide right >
+				<Slide bottom >
 					<TimelineCard
 						type="Bachelors Degree"
 						title="BSc. (HONS) in Computer Science"

@@ -16,6 +16,7 @@ import {
 	Events,
 	animateScroll as scroll,
 } from "react-scroll";
+import Contact from "./Contact";
 
 function App() {
 	return (
@@ -23,7 +24,6 @@ function App() {
 			<div className="lg:px-[100px] bg-white/60 backdrop-blur-md shadow-lg fixed top-0 left-0 right-0 z-30">
 				<div className="">
 					<Header />
-
 				</div>
 			</div>
 			<div className="md:px-[100px] relative">
@@ -49,6 +49,7 @@ function App() {
 				<Exp />
 				<Port />
 				<Skills />
+				<Contact />
 			</div>
 			<Footer />
 		</main>

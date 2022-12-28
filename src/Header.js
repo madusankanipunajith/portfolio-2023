@@ -5,6 +5,7 @@ import {
 	AiOutlineHome,
 	AiOutlineInfoCircle,
 	AiOutlineExperiment,
+	AiOutlineMail,
 } from "react-icons/ai";
 import { GrProjects } from "react-icons/gr";
 import { MdOutlineSchool } from "react-icons/md";
@@ -61,6 +62,7 @@ const Header = () => {
 									["Experience", "experience"],
 									["Portfolio", "portfolio"],
 									["Skills", "skills"],
+									["Contact", "contact"],
 								].map(([title, url]) => (
 									<Link
 										className={navListItemStyle}
@@ -114,6 +116,11 @@ const Header = () => {
 								"Skills",
 								"skills",
 								<GiProgression className={mobileMenuIconStyle} />,
+							],
+							[
+								"Contact",
+								"contact",
+								<AiOutlineMail className={mobileMenuIconStyle} />,
 							],
 						].map(([title, url, icon]) => (
 							<Link
