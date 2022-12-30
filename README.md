@@ -1,3 +1,11 @@
+# Environmental variables
+.env should include following variables.
+```
+REACT_APP_TEMPLATE_ID=<emailjs template id>
+REACT_APP_USER_ID=<emailjs public key>
+REACT_APP_SERVICE_ID=<emailjs serivce id>
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
